@@ -11,7 +11,7 @@ func GetConfig() *viper.Viper {
 	c := viper.New()
 	c.SetConfigType("yaml")
 	c.SetConfigName("config")
-	c.AddConfigPath(".")
+	c.AddConfigPath("/usr/local/seeds/")
 	c.AutomaticEnv()
 
 	c.SetDefault("database.host", "127.0.0.1")
